@@ -1,6 +1,6 @@
-#include "headers.h"
-#include "utils.h"
-#include "bg.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "./fg.h"
 
 // This function converts a number of type string to int
 int get_num_5(char *str){

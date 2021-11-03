@@ -1,9 +1,9 @@
-#include "prompt.h"
-#include "headers.h"
-#include "utils.h"
-#include "history.h"
-#include "other_commands.h"
-#include "signal.h"
+#include "./commands/prompt/prompt.h"
+#include "./commands/headers.h"
+#include "./commands/utils/utils.h"
+#include "./commands/history/history.h"
+#include "./commands/other_commands/other_commands.h"
+#include "./commands/signal/signal.h"
 
 
 int main(){

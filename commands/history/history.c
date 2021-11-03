@@ -1,6 +1,6 @@
-#include "headers.h"
-#include "utils.h"
-#include "history.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "./history.h"
 
 // This function loads history upon shell invocation
 char hist_commands[MAX_HISTORY][BUFFER_SIZE];
@@ -10,7 +10,7 @@ void load_history(){
     // Getting path of "history.txt"
     char *path = (char *)malloc(DIR_SIZE * sizeof(char));
     strcpy(path, HOME_DIR);
-    strcat(path, "/history.txt");
+    strcat(path, "/commands/history/history.txt");
 
     FILE* f = fopen(path, "r+");
     if(f == NULL){
@@ -46,7 +46,7 @@ void save_history(){
     // Getting path of "history.txt"
     char *path = (char *)malloc(DIR_SIZE * sizeof(char));
     strcpy(path, HOME_DIR);
-    strcat(path, "/history.txt");
+    strcat(path, "/commands/history/history.txt");
 
     // Opening "history.txt" in write+ mode
     FILE* f = fopen(path, "w+");

@@ -1,6 +1,6 @@
 #include "cd.h"
-#include "headers.h"
-#include "utils.h"
+#include "../headers.h"
+#include "../utils/utils.h"
 
 #define PATH_SIZE 1024
 

@@ -1,6 +1,6 @@
-#include "headers.h"
-#include "utils.h"
-#include "pwd.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "./pwd.h"
 
 void pwd(){
 

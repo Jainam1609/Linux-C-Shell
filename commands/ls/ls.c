@@ -1,6 +1,6 @@
-#include "headers.h"
-#include "utils.h"
-#include "ls.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "./ls.h"
 
 
 int flags[2] = {0};         // stores info about flags. flags[0] is -a and flags[1] is -l

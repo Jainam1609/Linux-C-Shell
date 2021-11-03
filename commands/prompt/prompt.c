@@ -1,6 +1,6 @@
-#include "prompt.h"
-#include "headers.h"
-#include "utils.h"
+#include "./prompt.h"
+#include "../headers.h"
+#include "../utils/utils.h"
 
 
 void prompt() {

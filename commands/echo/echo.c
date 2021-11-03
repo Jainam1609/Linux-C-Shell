@@ -1,6 +1,6 @@
-#include "headers.h"
-#include "utils.h"
-#include "echo.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "./echo.h"
 
 void echo(){
 

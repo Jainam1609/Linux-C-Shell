@@ -1,6 +1,6 @@
-#include "headers.h"
-#include "utils.h"
-#include "bg.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "./replay.h"
 
 void replay(){
 

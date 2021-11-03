@@ -1,6 +1,6 @@
-#include "headers.h"
-#include "utils.h"
-#include "pinfo.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "./pinfo.h"
 
 // This function
 int get_num(char *str){

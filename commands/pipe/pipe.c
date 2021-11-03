@@ -1,6 +1,6 @@
-#include "headers.h"
-#include "utils.h"
-#include "pipe.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "./pipe.h"
 
 char *pipe_command[BUFFER_SIZE];
 

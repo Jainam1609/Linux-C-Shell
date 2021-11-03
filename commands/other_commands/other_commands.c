@@ -1,7 +1,7 @@
-#include "headers.h"
-#include "utils.h"
-#include "prompt.h"
-#include "other_commands.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "../prompt/prompt.h"
+#include "./other_commands.h"
 
 // Creates foreground process
 void makeFG(){

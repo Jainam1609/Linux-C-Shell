@@ -1,6 +1,6 @@
-#include "headers.h"
-#include "utils.h"
-#include "jobs.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "./jobs.h"
 
 // This array stores input flags
 int flags_jobs[2];

@@ -1,7 +1,7 @@
-#include "headers.h"
-#include "utils.h"
-#include "signal.h"
-#include "prompt.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "./signal.h"
+#include "../prompt/prompt.h"
 
 void ctrlc(int sig){
 

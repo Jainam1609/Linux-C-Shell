@@ -1,6 +1,6 @@
-#include "headers.h"
-#include "utils.h"
-#include "redirection.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "./redirection.h"
 
 void free_command(){
 

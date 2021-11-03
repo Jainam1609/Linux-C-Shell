@@ -1,0 +1,14 @@
+13
+ls
+yo
+darsh
+kela
+pinfo
+history
+sleep 3
+cd ..
+cd .
+cd ~
+clear
+history
+exit

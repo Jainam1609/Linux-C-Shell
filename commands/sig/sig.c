@@ -1,9 +1,9 @@
-#include "headers.h"
-#include "utils.h"
-#include "bg.h"
+#include "../headers.h"
+#include "../utils/utils.h"
+#include "./sig.h"
 
 // This function converts a number of type string to int
-int get_num_4(char *str){
+int get_num_3(char *str){
 
     int num = 0, single_num;
     for(int i=0; i<strlen(str); i++){
@@ -19,27 +19,32 @@ int get_num_4(char *str){
     return num;
 }
 
-void bg(){
+void sig(){
 
-    if(total_arguments != 2){
+    if(total_arguments != 3){
         fprintf(stderr, "Error: Invalid number of arguments\n");
         return;
     }
 
     int job_number;
-    job_number = get_num_4(command[1]);
+    job_number = get_num_3(command[1]);
     if(job_number > total_bg_process || job_number <= 0){
         fprintf(stderr, "Error: Invalid Job Number\n");
+        return;
+    }
+
+    int signal = get_num_3(command[2]);
+    if(signal <= 0){
+        fprintf(stderr, "Error: Invalid Signal Number\n");
         return;
     }
 
     Process* curr = head -> next;
     for(int i = total_bg_process; curr != NULL;curr = curr -> next, i--){
         if(i == job_number){
-            kill(curr ->pid, SIGCONT);
+            printf("%s\n", curr->process_name);
+            kill(curr ->pid, signal);
             return;
         }
     }
-    
-    printf("Error: Invalid Job Number\n");
 }

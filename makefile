@@ -1,2 +1,2 @@
 main:
-	gcc -g main.c prompt.c cd.c utils.c echo.c pwd.c ls.c history.c other_commands.c pinfo.c repeat.c redirection.c pipe.c jobs.c sig.c fg.c bg.c signal.c replay.c
+	gcc -g -w main.c ./commands/prompt/prompt.c ./commands/cd/cd.c ./commands/utils/utils.c ./commands/echo/echo.c ./commands/pwd/pwd.c ./commands/ls/ls.c ./commands/history/history.c ./commands/other_commands/other_commands.c ./commands/pinfo/pinfo.c ./commands/repeat/repeat.c ./commands/redirection/redirection.c ./commands/pipe/pipe.c ./commands/jobs/jobs.c ./commands/sig/sig.c ./commands/fg/fg.c ./commands/bg/bg.c ./commands/signal/signal.c ./commands/replay/replay.c
